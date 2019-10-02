@@ -1,0 +1,30 @@
+{
+  "name": "task11_protractor_cucumber",
+  "version": "1.0.0",
+  "description": "BDD TA Frameworks ",
+  "main": "index.js",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "cucumber": "^5.1.0",
+    "cucumber-html-reporter": "^5.0.2",
+    "cucumber-pretty": "^1.5.2",
+    "fs-extra": "^8.1.0",
+    "protractor": "^5.4.2",
+    "protractor-cucumber-framework": "^6.1.3",
+    "winston": "^3.2.1",
+    "yargs": "^14.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "protractor ./test/e2e/config/protractor.config.js",
+    "webdriver-update": "webdriver-manager update",
+    "pree2e": "node ./test/e2e/config/utils/cleanup.js",
+    "postinstall": "webdriver-manager update --versions.standalone=3.10.0 --gecko=false",
+    "test:update": "webdriver-manager update",
+    "test:generate-report": "node ./test/e2e/utils/reporter.js",
+    "test:start-server": "webdriver-manager start --versions.standalone=3.10.0"
+  },
+  "author": "Anton Zimin",
+  "license": "ISC"
+}

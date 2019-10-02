@@ -1,0 +1,14 @@
+{
+    "MainMenu": {
+        "isCollection": false,
+        "selector": ".header-container .header-content .main-menu"
+    },
+    "Expanded Menu": {
+        "isCollection": false,
+        "selector": ".header-container .header-content .main-menu .menu-level-two"
+    },
+    "Expanded Menu MainList": {
+        "isCollection": true,
+        "selector": ".header-container .header-content .main-menu .products-services-menu-tab .menu-level-two-links>a"
+    }
+}
